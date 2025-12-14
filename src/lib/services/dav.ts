@@ -1,10 +1,15 @@
 import { DAVClient } from "tsdav";
+import {
+  DAV_SERVER_URL,
+  DAV_SERVER_USERNAME,
+  DAV_SERVER_PASSWORD,
+} from "$env/static/private";
 
 const client = new DAVClient({
-  serverUrl: "http://localhost:8080/dav.php/principals/abhimanyu",
+  serverUrl: DAV_SERVER_URL,
   credentials: {
-    username: "abhimanyu",
-    password: "admin",
+    username: DAV_SERVER_USERNAME,
+    password: DAV_SERVER_PASSWORD,
   },
   authMethod: "Basic",
   defaultAccountType: "caldav",

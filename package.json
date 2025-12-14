@@ -30,6 +30,8 @@
 		"vite": "^7.2.2"
 	},
 	"dependencies": {
-		"mode-watcher": "^1.1.0"
+		"better-auth": "^1.4.7",
+		"mode-watcher": "^1.1.0",
+		"tsdav": "^2.1.6"
 	}
 }
